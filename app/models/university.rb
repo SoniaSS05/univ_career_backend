@@ -5,4 +5,5 @@ class University < ApplicationRecord
 
     validates :name, presence: true
     validates :location, presence: true
+    validates :url, :presence => true, :url => true
 end
