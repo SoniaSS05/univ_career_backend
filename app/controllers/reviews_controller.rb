@@ -11,8 +11,17 @@ class ReviewsController < ApplicationController
         render json: review
     end
 
+    def destroy
+        review = find_review
+        review.destroy
+        render json: review
+    end
 
     private 
+
+    def find_review
+        Review.find(params[:id])
+    end
 
     def review_params
         params.require(:review).permit(:comment, :rating, :university_id, :user_id)
