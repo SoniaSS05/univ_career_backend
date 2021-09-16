@@ -11,6 +11,12 @@ class ReviewsController < ApplicationController
         render json: review
     end
 
+    def update
+        review = find_review
+        review.update(review_params)
+        render json: review
+    end
+
     def destroy
         review = find_review
         review.destroy
