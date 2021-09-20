@@ -25,25 +25,25 @@ allstates = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado
                        'Utah', 'Vermont', 'Virginia', 'Washington', 'Wisconsin', 'Wyoming'];  
 
 
-Medicine = Career.create!(career_name: "Medicine")
-Accounting = Career.create!(career_name: "Accounting")
-Mechanical_Engineering = Career.create!(career_name: "Mechanical Engineering")
-Systems_Engineering = Career.create!(career_name: "Systems Engineering")
-Chiropractic = Career.create!(career_name: "Chiropractic")
-Nursing = Career.create!(career_name: "Nursing")
-Information_Technology = Career.create!(career_name: "Information Technology")
-Electrical_Engineering = Career.create!(career_name: "Electrical Engineering")
-Artificial_Intelligence = Career.create!(career_name: "Artificial Intelligence")
-Medical_Dental = Career.create!(career_name: "Medical Dental")
-Education = Career.create!(career_name: "Education")
-Social_Work = Career.create!(career_name: "Social Work")
-Psychology = Career.create!(career_name: "Psychology")
-Communication = Career.create!(career_name: "Communication")
-Elementary_Education = Career.create!(career_name: "Elementary Education")
+medicine = Career.create!(career_name: "Medicina")
+accounting = Career.create!(career_name: "Accounting")
+mechanical_Engineering = Career.create!(career_name: "Mechanical Engineering")
+systems_Engineering = Career.create!(career_name: "Systems Engineering")
+chiropractic = Career.create!(career_name: "Chiropractic")
+nursing = Career.create!(career_name: "Nursing")
+information_Technology = Career.create!(career_name: "Information Technology")
+electrical_Engineering = Career.create!(career_name: "Electrical Engineering")
+artificial_Intelligence = Career.create!(career_name: "Artificial Intelligence")
+medical_Dental = Career.create!(career_name: "Medical Dental")
+education = Career.create!(career_name: "Education")
+social_Work = Career.create!(career_name: "Social Work")
+psychology = Career.create!(career_name: "Psychology")
+communication = Career.create!(career_name: "Communication")
+elementary_Education = Career.create!(career_name: "Elementary Education")
 
-allcareers = [Medicine, Accounting, Mechanical_Engineering, Systems_Engineering, Chiropractic, Nursing,
-            Information_Technology, Electrical_Engineering, Artificial_Intelligence, Medical_Dental,
-            Education, Social_Work, Psychology, Nursing, Communication, Elementary_Education ]
+allcareers = [medicine, accounting, mechanical_Engineering, systems_Engineering, chiropractic, nursing, information_Technology,
+              electrical_Engineering, artificial_Intelligence, medical_Dental, education, social_Work,psychology, communication,
+              elementary_Education]
 
 user = User.create!(username: "SSS", password_digest: "123")
 
@@ -54,7 +54,7 @@ user = User.create!(username: "SSS", password_digest: "123")
     )
     university.careers << allcareers.sample()
     university.careers << allcareers.sample()
-    university.careers << allcareers.sample()  
+    university.careers << allcareers.sample()
 
     5.times do
         review = Review.create!(
