@@ -30,7 +30,7 @@ class ReviewsController < ApplicationController
     end
 
     def review_params
-        params.require(:review).permit(:comment, :rating, :university_id, :user_id)
+        params.require(:review).permit(:comment, :rating)
     end
 
     def data_notvalid(invalid)
