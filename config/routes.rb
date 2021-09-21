@@ -9,4 +9,6 @@ Rails.application.routes.draw do
  # post '/universities', to: 'universities#create'
  # get '/universities/:id', to: 'universities#show'
  # patch '/universities/:id', to: 'universities#update'
+
+ get '/careers/:id/universities', to: 'careers#universities'
 end
